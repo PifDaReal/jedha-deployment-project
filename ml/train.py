@@ -1,26 +1,13 @@
-import pandas as pd
-import mlflow
 import time
-from sklearn.pipeline import Pipeline
+
+import mlflow
+import pandas as pd
+from mlflow.models.signature import infer_signature
 from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.model_selection import train_test_split
-from mlflow.models.signature import infer_signature
-
-
-import time
-import mlflow
-
-import pandas as pd
-
-from sklearn.model_selection import train_test_split
-from mlflow.models.signature import infer_signature
-
 from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 if __name__ == "__main__":
     # Set your variables for your environment
